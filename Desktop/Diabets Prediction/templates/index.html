@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../static/styles/style.css">
+    <title>Diabetes_Prediction</title>
+  </head>
+  <body>
+    <div class="head" >
+      <h1>Diabetes Predictor For Females</h1>
+    </div>
+    <br>
+    <div class="bo">
+      <form method="POST" style="text-align: center">
+        <table align="center">
+          <tr>
+            <td><input type="number" id="Pregnancies" name="Pregnancies" placeholder="Pregnancies" />  <br /></td>
+          </tr>
+          
+
+          <tr>
+            <td><input type="number" id="Age" name="Age" placeholder="Age" /> <br /></td>
+          </tr>
+          <tr>
+            <td>
+              <input type="number" id="Glucose" name="Glucose" placeholder="Glucose" /><br />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="BloodPressure"
+                name="BloodPressure"
+                step="0.01"
+                placeholder="Blood Pressure"
+              /><br />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="SkinThickness"
+                name="SkinThickness"
+                placeholder="Skin Thickness"
+              /><br />
+            </td>
+          </tr>
+          <tr>
+            
+            <td>
+              <input type="number" id="Insulin" name="Insulin" step="0.01" placeholder="Insulin"/><br />
+              
+            </td>
+          </tr>
+          <tr>
+            <td><input type="number" id="BMI" name="BMI"  placeholder="BMI" step="0.01"/><br /></td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="DiabetesPedigreeFunction"
+                name="DiabetesPedigreeFunction"
+                step = "0.01"
+                placeholder="Diabetes Pedigree Function"
+              /><br />
+            </td>
+          </tr>
+        </table>
+        <input class="btn btn-primary" type="submit" value="Predict">
+        <br>
+      </form>
+      <div class="bottom">
+        <h3 style="text-align: center">{{ output }}</h3>
+      </div>
+    </div>
+  </body>
+</html>
